@@ -1,0 +1,21 @@
+<!--<div class="header">-->
+<!--  <li>-->
+<!--    <a routerLink="" routerLinkActive="active">{{ title }}</a>-->
+<!--  </li>-->
+<!--  <li>Inicio</li>-->
+<!--</div>-->
+<header class="header">
+  <div class="logo">
+    <a routerLink="" routerLinkActive="active">{{title}}</a>
+  </div>
+  <div class="navigationMenu">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="menu-icon"><img src="{{imgUrl}}" alt=""></i>
+    </label>
+    <ul>
+      <li><a routerLink="" routerLinkActive="active">Inicio</a></li>
+      <li><a class="nav-item" routerLink="proyectos" routerLinkActive="active">Proyectos</a></li>
+    </ul>
+  </div>
+</header>

@@ -1,1 +1,179 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --darkBlack: #0F1819;
+  --darlBlue: #101728;
+  --electricBlue: #1F41BB;
+  --darkPurple: #260E69;
+  --middlePurple: #9340FF;
+  --middlePink: #FF3C5F;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  max-width: 100vw;
+}
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--darlBlue);
+}
+
+.secondTitle{
+  font-size: 4.5rem;
+  margin: 2rem 1rem;
+  color:white;
+}
+
+.thirdTitle{
+  font-size: 3rem;
+  margin:1.5rem 0;
+  font-style: oblique;
+}
+
+.fourthTitle{
+  font-size: 2rem;
+  margin:1rem 2rem;
+  font-style: italic;
+}
+
+.middleText{
+  font-size: 2rem;
+  margin:2.5rem;
+}
+
+.smallText{
+  font-size: 1.3rem;
+  margin:0 2rem;
+}
+
+.regularButton{
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(147,64,255,1) 51%, rgba(255,60,95,1) 100%);
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+}
+
+hr{
+  margin: 0 auto;
+  width: 90%;
+  height: 0.1rem;
+  background-color: #ffffff;
+}
+
+/* Estilos de la cabecera y menu de navegacion */
+.header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  background-color:  var(--darkBlack);
+  opacity: 0.8;
+}
+
+.header a{
+  color:white;
+}
+
+.logoTitle{
+  text-decoration: none;
+}
+
+.menuHamburgerLogo{
+  width: 5rem;
+}
+
+.navigationMenu{
+  display: flex;
+  align-items: center;
+}
+
+.navigationMenu ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.navigationMenu li{
+  margin-right: 1rem;
+}
+
+.navigationMenu a{
+  text-decoration: none;
+}
+
+.navigationMenu li:last-child{
+  padding: .25rem .75rem;
+  border-radius: .2rem;
+}
+
+.menu-icon img{
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.menu-icon, #check{
+  display: none;
+}
+
+@media (max-width:768px){
+  .checkbtn{
+    display: block;
+  }
+  .menu-icon{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .navigationMenu ul{
+    display: block;
+    position: fixed;
+    top:70px;
+    left:-100%;
+    background: #222;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .navigationMenu ul li{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .navigationMenu ul li:last-child{
+    background: none;
+    padding: 1rem;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    transition: all .25s;
+  }
+}
+
+.textPurple{
+  color: var(--middlePurple);
+}
+
+.textEBlue{
+  color:var(--electricBlue);
+}
+
+.textWhite{
+  color: white;
+}

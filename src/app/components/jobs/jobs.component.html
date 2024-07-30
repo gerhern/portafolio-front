@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="jobsWrapper">
+    <div class="jobsBox">
+      <div class="job" *ngFor="let job of jobs" id="{{ job.company }}">
+        <img src="{{ job.image }}" alt="{{ job.company}}" class="jobImage">
+        <h3 class="companyName">{{ job.company }}</h3>
+        <button class="buttonJob">Ver más</button>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-slide-button swiper-button-prev"></div>
+    <div class="swiper-slide-button swiper-button-next"></div>
+  </div>
+</div>
+

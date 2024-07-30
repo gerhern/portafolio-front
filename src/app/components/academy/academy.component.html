@@ -1,0 +1,14 @@
+<h3 class="thirdTitle alignText">Información Academica</h3>
+<div class="container">
+  <div class="academyBox timeline">
+    <ul>
+      <li *ngFor="let academy of academies">
+        <div class="academy">
+          <time>{{ academy.end_date | date:'yyyy LLLL' }}</time>
+            <img src="{{ academy.image }}" alt="{{ academy.name }}">
+            <h3><span class="importantSpan">{{ academy.name }} </span>{{ academy.academy }}</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

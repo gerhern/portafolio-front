@@ -1,7 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HomeService} from '../../services/home.service';
 import {Skill} from '../../interfaces/home/skill';
-import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-skills',
@@ -32,9 +31,5 @@ export class SkillsComponent implements OnInit, AfterViewInit {
       this.skills = [];
       console.error('Error al realizar consulta');
     });
-  }
-
-  private showSkillInfo(){
-
   }
 }

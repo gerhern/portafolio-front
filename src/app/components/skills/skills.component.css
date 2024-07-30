@@ -37,9 +37,9 @@
 
 .skill img{
   width: 7rem;
-  border-radius: 100%;
-  background-color: var(--darlBlue);
-  border: 1px solid var(--middlePurple);
+  /*border-radius: 100%;*/
+  /*background-color: var(--darlBlue);*/
+  /*border: 1px solid var(--middlePurple);*/
 }
 
 .skillText{

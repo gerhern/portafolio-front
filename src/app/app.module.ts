@@ -12,6 +12,7 @@ import { AcademyComponent } from './components/academy/academy.component';
 import {LOCALE_ID } from '@angular/core';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { JobsComponent } from './components/jobs/jobs.component';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -21,7 +22,8 @@ registerLocaleData(localeEs, 'es');
     HeaderComponent,
     LandingComponent,
     SkillsComponent,
-    AcademyComponent
+    AcademyComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,

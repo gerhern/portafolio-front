@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-landing',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  public name: string = 'Gerardo López Hernández';
+  public name: string = environment.user_name;
   public image: string = 'assets/img/logos/github-logo.svg';
 
   constructor() { }

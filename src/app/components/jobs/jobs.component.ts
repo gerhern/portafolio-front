@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {Job} from '../../interfaces/home/job';
 import {HomeService} from '../../services/home.service';
 import Swal from 'sweetalert2';
@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   templateUrl: './jobs.component.html',
   styleUrls: ['./jobs.component.css']
 })
-export class JobsComponent implements OnInit, AfterViewInit {
+export class JobsComponent implements AfterViewInit {
 
   public jobs: Job[];
 
@@ -17,9 +17,6 @@ export class JobsComponent implements OnInit, AfterViewInit {
     private homeService: HomeService,
     private router: Router,
   ) { }
-
-  ngOnInit(): void {
-  }
 
   ngAfterViewInit(): void {
     const promesa = async () => {
@@ -59,7 +56,7 @@ export class JobsComponent implements OnInit, AfterViewInit {
 
 
     Swal.fire({
-      width: '50%',
+      // width: '50%',
       title: job.company,
       html: text,
       footer: text2,

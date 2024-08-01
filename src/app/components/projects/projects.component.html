@@ -1,0 +1,32 @@
+<div class="container">
+<!--  <h2 class="thirdTitle">{{ username }}</h2>-->
+  <p class="secondTitle">Proyectos</p>
+  <div class="projectsBox">
+    <ul class="projectList">
+      <div class="projectListItem" *ngFor="let project of projects">
+        <li>
+          <button class="regularButton" (click)="selectProject(project)">{{ project.title }}</button>
+        </li>
+      </div>
+    </ul>
+    <div class="projects">
+      <app-small-project *ngFor="let project of projects" [project]=project></app-small-project>
+    </div>
+    <div class="singleProyectBox">
+      <div class="singleProyectDescription">
+        <h2 class="thirdTitle">{{ title }}</h2>
+        <p class="singleProyectText" [innerHTML]="description"></p>
+        <ul class="singleProyectTech">
+          <li *ngFor="let tech of techs">
+            <img src="assets/img/tecnoLogos/{{ tech.url_image }}" alt="{{ tech.name }}">
+          </li>
+        </ul>
+      <div class="linkBox" [ngClass]="id === 0 ? 'dNone' : 'dFlex'">
+        <a class="projectLink" routerLink="/proyecto/{{ id }}">Ver más
+          <img class="linkImage" src='assets/img/logos/magnifier-logo.svg' alt="photo">
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

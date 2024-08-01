@@ -13,6 +13,9 @@ import {LOCALE_ID } from '@angular/core';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { ProyectsComponent } from './pages/proyects/proyects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SmallProjectComponent } from './components/small-project/small-project.component';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -23,7 +26,10 @@ registerLocaleData(localeEs, 'es');
     LandingComponent,
     SkillsComponent,
     AcademyComponent,
-    JobsComponent
+    JobsComponent,
+    ProyectsComponent,
+    ProjectsComponent,
+    SmallProjectComponent
   ],
   imports: [
     BrowserModule,

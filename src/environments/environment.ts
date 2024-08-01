@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   portfolio_back: 'http://localhost:1000/api/v1/',
   app_name: 'Portafolio',
+  user_name: 'Gerardo López Hernández',
 };
 
 /*

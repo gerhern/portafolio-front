@@ -1,0 +1,85 @@
+.projectBox{
+  width: 100%;
+  margin: 2.5rem 0;
+  padding: 2.5rem 1rem;
+  border-radius:10px;
+  border:1px solid var(--middlePurple);
+  background: rgb(38,14,105);
+  background: linear-gradient(0deg, rgba(38,14,105,1) 0%, rgba(16,23,40,1) 95%);
+}
+
+.techList{
+  margin-top: -5.5rem;
+  /* margin-left: -1.5rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /*background-color: darkred;*/
+}
+
+.techImg{
+  width: 6rem;
+  margin: 0 0.5rem;
+  /* padding: 1rem; */
+  border-radius: 100%;
+  background-color: var(--darlBlue);
+  /* background-color: white; */
+  border: 1px solid var(--middlePurple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techImg img{
+  margin: 1rem;
+  max-width: 3.5rem;
+}
+
+.projectListText{
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.projectListText p{
+  margin-bottom: 2rem;
+}
+
+.projectLink {
+  min-width: 25%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(147, 64, 255, 1) 51%, rgba(255, 60, 95, 1) 100%);
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.linkBox{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center ;
+  align-items: center;
+}
+
+.linkImage{
+  width: 2rem;
+  font-size: 2rem;
+}
+
+.projectLink a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.slideSelector{
+  display: none;
+}
+
+#captionText{
+  display: none;
+}

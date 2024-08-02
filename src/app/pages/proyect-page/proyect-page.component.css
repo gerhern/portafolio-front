@@ -1,0 +1,147 @@
+.container{
+  width: 100%;
+  padding: 2.5rem 0;
+  /* height: 100vh; */
+}
+
+.detailsSection{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:  space-evenly;
+  align-items: center;
+}
+
+.detailsTitle{
+  color:var(--middlePurple);
+  margin: 10rem 2rem;
+  text-align: center;
+}
+
+.description{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.description p{
+  width: 50%;
+}
+
+.description h6{
+  width: 100%;
+}
+
+.detailsImg{
+  max-width:40%;
+  border-radius: 9px;
+}
+
+.techListContainer{
+  width: 30%;
+  padding: 1rem;
+  margin: 2.5rem auto;
+  border:1px solid var(--middlePurple);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(38,14,105);
+  background: linear-gradient(0deg, rgba(38,14,105,1) 0%, rgba(16,23,40,1) 95%);
+}
+
+.techList{
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.techContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+
+.techImg{
+  max-width: 4rem;
+}
+
+.techContainer h6{
+  width: max-content;
+  margin: 1.1rem 1rem;
+}
+
+.galery{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.galeryImg{
+  border-radius: 9px;
+  margin: 2.5rem;
+}
+
+.galeryImg{
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.demoContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:768px){
+
+  .detailsSection{
+    flex-direction: column;
+  }
+
+  .description{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description p{
+    width: auto;
+  }
+
+  .description h6{
+    width: auto;
+  }
+
+  .detailsImg{
+    max-width:80%;
+    margin: 2rem auto;
+  }
+
+  .techListContainer{
+    margin: 2.5rem auto;
+    padding: 1rem;
+    width: 75%;
+    border:1px solid var(--middlePurple);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(38,14,105);
+    background: linear-gradient(0deg, rgba(38,14,105,1) 0%, rgba(16,23,40,1) 95%);
+  }
+
+
+  .galery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

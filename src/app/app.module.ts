@@ -16,6 +16,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { ProyectsComponent } from './pages/proyects/proyects.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SmallProjectComponent } from './components/small-project/small-project.component';
+import { ProyectPageComponent } from './pages/proyect-page/proyect-page.component';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -29,7 +30,8 @@ registerLocaleData(localeEs, 'es');
     JobsComponent,
     ProyectsComponent,
     ProjectsComponent,
-    SmallProjectComponent
+    SmallProjectComponent,
+    ProyectPageComponent
   ],
   imports: [
     BrowserModule,

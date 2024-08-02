@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="container">
+  <section class="detailsSection">
+    <h2 class="secondTitle detailsTitle">{{ title }}</h2>
+    <div class="description">
+      <p class="middleText" [innerHTML]="description"></p>
+      <div class="techListContainer">
+        <ul class="techList">
+          <li class="textPurple">Tecnologías usadas en este proyecto</li>
+          <li *ngFor="let tech of techs">
+            <div class="techContainer">
+              <img class="techImg" src="assets/img/tecnoLogos/{{ tech.url_image }}" alt="photo">
+              <h6>{{ tech.name }}</h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h6 class="smallText">Proyecto creado:</h6>
+            <h6 class="smallText">{{ fecha }}</h6>
+    </div>
+    <div class="galery">
+      <img *ngFor="let image of images" class="galeryImg" src="assets/img/{{image.url}}" alt="photo">
+    </div>
+  </section>
+</div>

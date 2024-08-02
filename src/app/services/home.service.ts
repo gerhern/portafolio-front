@@ -27,4 +27,12 @@ export class HomeService {
       console.error(e);
     }
   }
+
+  public getProjectData(projectId: number): any {
+    try{
+      return this.http.post(this.endpoint + 'project', {id: projectId}, this.httpOptions).toPromise();
+    }catch (e){
+      console.error(e);
+    }
+  }
 }
